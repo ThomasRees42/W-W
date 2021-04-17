@@ -1,0 +1,72 @@
+.container {
+    padding: 80px 120px;
+}
+
+.person {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 80%;
+    height: 80%;
+    opacity: 0.7;
+}
+
+.person:hover {
+    border-color: #f1f1f1;
+}
+
+.person-detail {
+    margin-left: 0; 
+    padding-left: 5px;
+    list-style: square;
+}
+
+.carousel-inner img {
+    width: 100%;
+    margin: auto;
+  }
+  
+.carousel-caption h3 {
+    color: #fff !important;
+}
+  
+@media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+}
+
+.logo {
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.iframe-wrapper {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.btn {
+    width: 60%;
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: RoyalBlue;
+  }
