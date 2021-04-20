@@ -25,8 +25,9 @@
                         <li><a href="#home">HOME</a></li>
                         <li><a href="#band">BAND</a></li>
                         <li><a href="#video">VIDEO</a></li>
-                        <li><a href="#repetoire">REPETOIRE</a></li>
+                        <li><a href="#repertoire">REPERTOIRE</a></li>
                         <li><a href="#contact">CONTACT</a></li>
+                        <li><a href="#calendar">CALENDAR</a></li>
                         <li><a href="#epk">EPK</a></li>
                     </ul>
                 </div>
@@ -139,11 +140,11 @@
         <div id="video" class="container text-center">
             <h3 style="padding-bottom: 20px;">Promo Video</h3>
             <div class="row iframe-wrapper">
-                <iframe src="https://www.youtube.com/embed/ha3Icni1dGk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/videoseries?list=PLE-oLBbRIz9nXIN8rIm4Q14YCVZ0bh586" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
-        <div id="repetoire" class="container text-center">
-            <h3>Repetoire</h3>
+        <div id="repertoire" class="container text-center">
+            <h3>Repertoire</h3>
             <br>
             <div class="row iframe-wrapper">
                 <iframe src="https://open.spotify.com/embed/playlist/5g5Qw6QdiiSrxzxAgzNnrb" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>   
@@ -184,6 +185,13 @@
                 </div>
             </div>
         </div>
+        <div id="calendar" class="container text-center">
+            <h3>Calendar</h3>
+            <br>
+            <div class="row iframe-wrapper">
+                <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FLondon&amp;src=dGhld2VpcmRhbmR3b25kZXJmdWxjb3ZlcnNAZ21haWwuY29t&amp;color=%23039BE5" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
         <div id="epk" class="container">
             <h3 class="text-center">Electronic Press Kit</h3>
             <br>
@@ -193,12 +201,17 @@
                 </a>
             </div>
         </div>
-        
+        <footer class="text-center">
+            <a class="up-arrow" href="#home" data-toggle="tooltip" title="TO TOP">
+              <span class="glyphicon glyphicon-chevron-up"></span>
+            </a><br><br>
+            <p>Made by Thomas Rees using a <a href="https://www.w3schools.com">www.w3schools.com</a> template.</p>
+          </footer>
     </body>
     <script>
         $(document).ready(function(){
           // Add smooth scrolling to all links in navbar + footer link
-          $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+          $(".navbar a, footer a[href='#home']").on('click', function(event) {
         
           // Make sure this.hash has a value before overriding default behavior
           if (this.hash !== "") {
