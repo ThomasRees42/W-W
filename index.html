@@ -216,17 +216,11 @@
             </a><br><br>
             <p>Made by Thomas Rees using a <a href="https://www.w3schools.com">www.w3schools.com</a> template.</p>
             <br>
-            <p>Preloader from <a href="https://github.com/tobiasahlin/SpinKit">https://github.com/tobiasahlin/SpinKit</a></p>
+            <p>Preloader from <a href="https://github.com/tobiasahlin/SpinKit">https://github.com/tobiasahlin/SpinKit</</p>
         </footer>
     </body>
     <script>
         $(document).ready(function(){
-            preloaderFadeOutTime = 1000;
-            function hidePreloader() {
-            var preloader = $('.spinner-wrapper');
-            preloader.fadeOut(preloaderFadeOutTime);
-            }
-            hidePreloader();
         
           // Add smooth scrolling to all links in navbar + footer link
           $(".navbar a, footer a[href='#home']").on('click', function(event) {
@@ -252,5 +246,12 @@
             } // End if
           });
         })
+    </script>
+    <script>
+        $(window).on('load', function() {
+            preloaderFadeOutTime = 1000;
+            var preloader = $('.spinner-wrapper');
+            preloader.fadeOut(preloaderFadeOutTime);
+        });
     </script>
 </html>
