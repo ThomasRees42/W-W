@@ -10,6 +10,15 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
     <body id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
+        <div class="spinner-wrapper">
+            <div class="spinner">
+                <div class="rect1"></div>
+                <div class="rect2"></div>
+                <div class="rect3"></div>
+                <div class="rect4"></div>
+                <div class="rect5"></div>
+            </div>
+        </div>
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -18,7 +27,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">The Weird and Wonderful</a>
+                    <a class="navbar-brand" href="#home">The Weird and Wonderful</a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
@@ -206,10 +215,19 @@
               <span class="glyphicon glyphicon-chevron-up"></span>
             </a><br><br>
             <p>Made by Thomas Rees using a <a href="https://www.w3schools.com">www.w3schools.com</a> template.</p>
-          </footer>
+            <br>
+            <p>Preloader from <a href="https://github.com/tobiasahlin/SpinKit">https://github.com/tobiasahlin/SpinKit</a></p>
+        </footer>
     </body>
     <script>
         $(document).ready(function(){
+            preloaderFadeOutTime = 1000;
+            function hidePreloader() {
+            var preloader = $('.spinner-wrapper');
+            preloader.fadeOut(preloaderFadeOutTime);
+            }
+            hidePreloader();
+        
           // Add smooth scrolling to all links in navbar + footer link
           $(".navbar a, footer a[href='#home']").on('click', function(event) {
         
