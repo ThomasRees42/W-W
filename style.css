@@ -1,5 +1,5 @@
 .container {
-    padding: 80px 120px;
+    padding: 40px 50px;
 }
 
 .person {
@@ -54,6 +54,13 @@ iframe {
     position: relative;
     overflow: hidden;
     padding-top: 56.25%;
+    height:100px;
+}
+
+@media (max-width: 800px) {
+    .iframe-wrapper {
+      padding-top: 100%
+    }
 }
 
 .btn {
