@@ -157,3 +157,8 @@ footer a:hover {
     background-color: #bdbdbd;
     z-index: 999999;
     }
+
+.bio {
+  padding-left: 10%;
+  padding-right: 10%;
+}
